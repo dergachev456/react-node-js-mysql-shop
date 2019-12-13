@@ -56,9 +56,7 @@ export default class Login extends Component {
         localStorage.clear()
         this.setState({ isLogedIn: true });
     }
-    render() {
-        console.log(this.state.user_name);
-        
+    render() {        
         return (
             <React.Fragment>
                 {

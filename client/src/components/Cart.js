@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import trashIcon from '../icons/trash.png'
-// import { sortCart } from '../sortLocalStorage'
 export default class Cart extends Component {
     state = {
         products: null,
@@ -9,7 +8,6 @@ export default class Cart extends Component {
         totalPrice: null
     }
     componentDidMount() {
-        // let sortedCart = sortCart(cart);
         let cart;
         try {
             cart = JSON.parse(localStorage.getItem('cart'));

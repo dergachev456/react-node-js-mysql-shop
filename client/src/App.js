@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Products from './components/Products'
@@ -11,15 +11,7 @@ import Login from './components/Login';
 import CreateOrder from './components/CreateOrder';
 import Admin from './components/Admin';
 
-export default class App extends Component {
-
-  componentDidMount() {
-    // fetch('http://localhost:8080/product')
-    //   .then(responce => responce.json())
-    //   .then(data => console.log(data))
-  }
-
-  render() {
+export default function App() {
     return (
       <div>
         <BrowserRouter>
@@ -37,7 +29,6 @@ export default class App extends Component {
         </BrowserRouter>
       </div>
     )
-  }
 }
 
 
